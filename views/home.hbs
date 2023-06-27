@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Marks</title>
+  <link rel="stylesheet" type="text/css" href="/style.css">
+</head>
+<body>
+  <h1>Student Marks</h1>
+  <div class="container">
+    <h2>Add Student</h2>
+    <form id="add-form">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="marks">Percentage Marks:</label>
+      <input type="number" id="marks" name="marks" min="0" max="100" required>
+      <button type="submit">Add</button>
+    </form>
+    <h2>Edit Student</h2>
+    <form id="edit-form">
+      <label for="edit-id">Student ID:</label>
+      <input type="text" id="edit-id" name="edit-id" required>
+      <label for="edit-name">Name:</label>
+      <input type="text" id="edit-name" name="edit-name" required>
+      <label for="edit-marks">Percentage Marks:</label>
+      <input type="number" id="edit-marks" name="edit-marks" min="0" max="100" required>
+      <button type="submit">Edit</button>
+    </form>
+    <h2>Delete Student</h2>
+    <form id="delete-form">
+      <label for="delete-id">Student ID:</label>
+      <input type="text" id="delete-id" name="delete-id" required>
+      <button type="submit">Delete</button>
+    </form>
+    <h2>View Students</h2>
+    <div id="students-table"></div>
+    <h2>Median Percentage Mark</h2>
+    <div id="median-mark"></div>
+  </div>
+  <script type="text/javascript" src="/script.js"></script>
+</body>
+</html>
